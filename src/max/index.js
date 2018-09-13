@@ -15,6 +15,6 @@ const max = arr => {
   }
   return maxValue;
 };
-max([1, 2, 4]);
+max([1, 2, 4, Infinity]);
 
 export default max;

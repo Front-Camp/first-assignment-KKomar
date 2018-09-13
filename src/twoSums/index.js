@@ -9,11 +9,13 @@
  * twoSums([5, 9, 3], 12); // [9, 3]
  */
 const twoSums = (arr, base) => {
+  newArr = [];
   for (var i = 0; i < arr.length; i++) {
-    if (arr[i] + arr[i+1] = base) {
-      var arrNumber = [arr[i], arr[i+1]];
+    if (arr[i] + arr[i+1] === base) {
+      newArr = [arr[i], arr[i+1]];
     }
   }
+  return newArr;
 };
 twoSums([5, 9, 3], 12);
 

@@ -19,6 +19,6 @@ const sumElements = arr => {
   }
   return summary;
 };
-sumElements([Infinity, NaN, 1]);
+sumElements(['1', 'hi', 3]);
 
 export default sumElements;
