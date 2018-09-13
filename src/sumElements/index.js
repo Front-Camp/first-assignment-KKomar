@@ -13,12 +13,12 @@
 const sumElements = arr => {
   var summary = 0;
   for (var i = 0; i < arr.length; i++) {
-    if (typeof arr[i] == "number" || Number(arr[i]) == "number"){
-      summary += arr[i];
+    if (typeof Number(arr[i]) == "number" && isFinite(arr[i])){
+      summary += Number(arr[i]);
     }
   }
   return summary;
 };
-sumElements(['1', 3]);
+sumElements([Infinity, NaN, 1]);
 
 export default sumElements;
